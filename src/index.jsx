@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Apropos from "./pages/Apropos";
 import Error from "./pages/Error";
@@ -10,20 +10,12 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Router>
-      <switch>
-        <Route path="/Home">
-          <Home />
-        </Route>
-        <Route path="/Apropos">
-          <Apropos />
-        </Route>
-        <Route path="/Error">
-          <Error />
-        </Route>
-        <Route path="/Logement">
-          <Logement />
-        </Route>
-      </switch>
+      <Routes>
+        <Route path="/Home" exact component={Home} />
+        <Route path="/Apropos" component={Apropos} />
+        <Route path="/Error" component={Error} />
+        <Route path="/Logement" component={Logement} />
+      </Routes>
     </Router>
   </React.StrictMode>
 );
