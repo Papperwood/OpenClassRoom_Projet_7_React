@@ -1,4 +1,5 @@
 import '../css/normalize.css'
+import '../css/error.css'
 
 function Error() {
     return (

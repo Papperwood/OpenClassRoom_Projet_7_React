@@ -1,4 +1,5 @@
 import '../css/normalize.css'
+import '../css/apropos.css'
 
 function Apropos() {
     return (

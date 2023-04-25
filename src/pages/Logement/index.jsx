@@ -1,4 +1,5 @@
 import '../css/normalize.css'
+import '../css/logement.css'
 
 function Logement() {
     return (

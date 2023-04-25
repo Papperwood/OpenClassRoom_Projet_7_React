@@ -1,4 +1,5 @@
 import '../css/normalize.css'
+import '../css/home.css'
 
 function Home() {
     return (
