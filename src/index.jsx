@@ -11,10 +11,10 @@ root.render(
   <React.StrictMode>
     <Router>
       <Routes>
-        <Route path="/Home" exact component={Home} />
-        <Route path="/Apropos" component={Apropos} />
-        <Route path="/Error" component={Error} />
-        <Route path="/Logement" component={Logement} />
+        <Route path="/Home" exact components={Home} />
+        <Route path="/Apropos" components={Apropos} />
+        <Route path="/Error" components={Error} />
+        <Route path="/Logement" components={Logement} />
       </Routes>
     </Router>
   </React.StrictMode>
