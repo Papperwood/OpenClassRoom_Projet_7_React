@@ -1,3 +1,5 @@
+import '../css/normalize.css'
+
 function Logement() {
     return (
       <div className="App">

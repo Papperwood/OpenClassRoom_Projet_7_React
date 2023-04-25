@@ -1,3 +1,5 @@
+import '../css/normalize.css'
+
 function Apropos() {
     return (
       <div className="App">

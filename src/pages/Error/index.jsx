@@ -1,3 +1,5 @@
+import '../css/normalize.css'
+
 function Error() {
     return (
       <div className="App">
