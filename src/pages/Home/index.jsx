@@ -1,13 +1,13 @@
 import "../css/normalize.css";
 import "../css/home.css";
 import Footer from "../../components/footer/footer";
+import Header from "../../components/header/header";
 
-function Home() {
-  return (
-    <div className="home">
-      <Footer />
-    </div>
-  );
+export default function Home() {
+	return (
+		<div className='home'>
+			<Header />
+			<Footer />
+		</div>
+	)
 }
-
-export default Home;
