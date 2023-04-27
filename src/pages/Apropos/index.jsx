@@ -1,16 +1,13 @@
-import '../css/normalize.css'
-import '../css/apropos.css'
+import "../css/normalize.css";
+import "../css/apropos.css";
+import Footer from "../../components/footer/footer";
 
 function Apropos() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <h1>
-            Apropos
-          </h1>
-        </header>
-      </div>
-    );
-  }
-  
+  return (
+    <div className="home">
+      <Footer />
+    </div>
+  );
+}
+
 export default Apropos;

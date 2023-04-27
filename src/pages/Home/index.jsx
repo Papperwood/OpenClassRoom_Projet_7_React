@@ -1,17 +1,13 @@
-import '../css/normalize.css'
-import '../css/home.css'
+import "../css/normalize.css";
+import "../css/home.css";
+import Footer from "../../components/footer/footer";
 
 function Home() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <h1>
-            Home page
-          </h1>
-          <p>zdfdifhifzghizrghizrhizhgizhg</p>
-        </header>
-      </div>
-    );
-  }
-  
+  return (
+    <div className="home">
+      <Footer />
+    </div>
+  );
+}
+
 export default Home;

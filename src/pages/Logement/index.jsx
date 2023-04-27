@@ -1,16 +1,13 @@
-import '../css/normalize.css'
-import '../css/logement.css'
+import "../css/normalize.css";
+import "../css/logement.css";
+import Footer from "../../components/footer/footer";
 
 function Logement() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <h1>
-            Logement
-          </h1>
-        </header>
-      </div>
-    );
-  }
-  
+  return (
+    <div className="home">
+      <Footer />
+    </div>
+  );
+}
+
 export default Logement;
