@@ -5,7 +5,7 @@ import Footer from "../../components/footer/footer";
 
 function Apropos() {
   return (
-    <div className="home">
+    <div className="Apropos">
       <Header />
       <Footer />
     </div>

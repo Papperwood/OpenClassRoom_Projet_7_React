@@ -1,0 +1,21 @@
+.Error_in {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 250px);
+}
+
+.Error_in_1 {
+  font-weight: 500;
+  font-size: clamp(20px, 4vw, 36px);
+  text-align: center;
+  color: #ff6060;
+}
+
+.Error_in_2 {
+  display: block;
+  text-align: center;
+  font-weight: 500;
+  font-size: clamp(12px, 2.5vw, 18px);
+}
