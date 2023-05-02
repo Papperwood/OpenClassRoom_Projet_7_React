@@ -7,12 +7,12 @@ export default function Navbar() {
         <nav className='navigation'>
             <ul className='nav_in'>
                 <li className= 'nav_click'>
-                    <Link  to='/Home/'>
+                    <Link  to='/'>
                         Accueil
                     </Link>
                 </li>
                 <li className= 'nav_click'>
-                    <Link  to='/A propos/'>
+                    <Link  to='/Apropos/'>
                         A propos
                     </Link>
                 </li>

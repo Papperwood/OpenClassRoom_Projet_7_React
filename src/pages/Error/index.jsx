@@ -13,7 +13,7 @@ function Error() {
         <p className="Error_in_1">
           Oups! La page que vous demandez n'existe pas.
         </p>
-        <button className="Error_in_2" to="/pages/Home">
+        <button className="Error_in_2" to="/">
           Retourner sur la page d'accueil
         </button>
       </div>
