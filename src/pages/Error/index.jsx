@@ -2,7 +2,8 @@ import "../css/normalize.css";
 import "../css/error.css";
 import Logo from "../../assets/404.png";
 import Header from "../../components/header/header";
-import Footer from "../../components/footer/footer";
+import Footer from "../../components/footer/footer"
+
 
 function Error() {
   return (
@@ -13,9 +14,9 @@ function Error() {
         <p className="Error_in_1">
           Oups! La page que vous demandez n'existe pas.
         </p>
-        <button className="Error_in_2" to="/">
+        <link className="Error_in_2" to="/">
           Retourner sur la page d'accueil
-        </button>
+        </link>
       </div>
       <Footer />
     </div>

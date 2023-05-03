@@ -37,7 +37,6 @@ function APropos() {
       <Header />
       <img src={aproposBanner} className="kalen_img" alt="Banner" />
       <section className="apropos-section">
-        {}
         {aproposData.map((apropos, index) => (
           <Dropdown
             title={apropos.title}
