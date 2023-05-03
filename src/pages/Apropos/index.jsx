@@ -7,7 +7,7 @@ import Dropdown from "../../components/dropdown/dropdown";
 
 function APropos() {
   /* Setting the title of the page. */
-  document.title = "A Propos - Kasa";
+  document.title = "Page A propos";
 
   const aproposData = [
     {
