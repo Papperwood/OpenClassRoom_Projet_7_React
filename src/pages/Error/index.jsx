@@ -1,6 +1,6 @@
+import { Link } from "react-router-dom";
 import "../css/error.css";
 import Logo from "../../assets/404.png";
-
 
 function Error() {
   return (
@@ -10,9 +10,9 @@ function Error() {
         <p className="Error_in_1">
           Oups! La page que vous demandez n'existe pas.
         </p>
-        <button className="Error_in_2" to="/">
+        <Link className="Error_in_2" to="/">
           Retourner sur la page d'accueil
-        </button>
+        </Link>
       </div>
     </div>
   );
