@@ -4,7 +4,6 @@ import Dropdown from "../../components/dropdown/dropdown";
 import aboutData from "../../data/aboutData.json";
 
 function APropos() {
-  /* Setting the title of the page. */
   document.title = "Page A propos";
 
   return (

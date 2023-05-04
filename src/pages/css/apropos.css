@@ -1,16 +1,33 @@
-.kalen_img {
-  border-radius: 20px;
-  width: 100%;
-  max-height: 223px;
-  object-fit: cover;
-  margin-top: 50px;
-  margin-bottom: 30px;
+body {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
-.apropos-section {
+.image-container {
   display: flex;
-  flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1780px;
+  justify-content: center;
+  align-items: center;
 }
+
+.kalen_img {
+  width: 1240px;
+  height: 223px;
+  border-radius: 15px;
+  object-fit: cover;
+  margin-left: 100px;
+
+}
+
+@media (max-width: 1440px) {
+  .kalen_img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  .kalen_img {
+    width: 336px;
+    height: 223px;
+  }
+}
+
