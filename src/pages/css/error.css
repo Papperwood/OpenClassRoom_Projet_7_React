@@ -18,4 +18,6 @@
   text-align: center;
   font-weight: 500;
   font-size: clamp(12px, 2.5vw, 18px);
+  text-decoration: none;
+  color: #ff6060;
 }
