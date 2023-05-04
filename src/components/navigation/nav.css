@@ -1,11 +1,38 @@
-.nav_in {
+/* nav.css */
+
+.navigation {
   display: flex;
-  gap: 50px;
-  font-size: clamp(12px, 2.5vw, 24px);
 }
 
-@media screen and (max-width: 700px) {
-  .nav_in {
-    gap: 20px;
-  }
+.nav_in {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
+
+.nav_click {
+  margin-right: 20px;
+}
+
+.nav_click:last-child {
+  margin-right: 0;
+}
+
+.nav_click a {
+  color: #FF6060;
+  text-decoration: none;
+  position: relative;
+  font-size: 24px;
+}
+
+.nav_click a:hover::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #FF6060;
+}
+

@@ -1,22 +1,31 @@
+/* header.css */
+
 .header {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 70px;
-  max-width: 95%;
+  max-width: 1240px; /* 1440px - 100px (marginLeft) - 100px (marginRight) */
   margin: 0 auto;
+  padding: 20px 100px;
+  box-sizing: border-box;
 }
-@media screen and (max-width: 900px) {
-  .header {
-    height: 40px;
-  }
-}
+
 .header img {
-  height: 60%;
+  max-width: 100%;
+  height: auto;
 }
-@media screen and (max-width: 700px) {
-  .header img {
-    height: 40px;
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .header {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
+
+@media screen and (max-width: 375px) {
+  .header {
+    padding: 20px 15px;
+  }
+}
+
