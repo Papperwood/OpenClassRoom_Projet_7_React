@@ -1,0 +1,22 @@
+.star-empty {
+  width: 0.9375rem;
+  height: 0.9375rem;
+  margin-right: 0.3125rem;
+  fill: var(--primary-color);
+}
+
+.star-empty {
+  fill: #e3e3e3;
+}
+
+@media (min-width: 992px) {
+  .star-empty {
+    width: 1.875rem;
+    height: 1.875rem;
+    margin-right: 0.625rem;
+  }
+}
+
+.star-full {
+  fill: #ff6060;
+}
