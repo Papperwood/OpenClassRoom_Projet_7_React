@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import Dropdown from "../../components/dropdown/dropdown";
 import kasaList from "../../data/kasaList.json";
 import Grade from "../../components/grade/grade";
+import Carousel from "../../components/carousel/carousel";
 
 export default function Logement() {
   const [isOpen1, setIsOpen1] = useState(false);
@@ -35,6 +36,7 @@ export default function Logement() {
 
   return (
     <div>
+      <Carousel selectedId={id} />
       <h1>{property.title}</h1>
       <h3>{property.location}</h3>
       <div className="info-container">

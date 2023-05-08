@@ -1,0 +1,27 @@
+.carousel .slide {
+  border-radius: 10px;
+}
+
+.carousel .thumbs-wrapper {
+  display: none;
+}
+
+.carousel .control-prev.control-arrow:before {
+  background: url('../../assets/Vector_left.png') no-repeat;
+}
+
+.carousel .control-next.control-arrow:before {
+  background: url('../../assets/Vector_right.png') no-repeat;
+}
+
+.carousel-slide-image {
+  width: 1240px;
+  height: 415px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.carousel-container {
+  display: flex;
+  justify-content: center;
+}
