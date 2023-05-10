@@ -7,17 +7,6 @@ import Grade from "../../components/grade/grade";
 import Carousel from "../../components/carousel/carousel";
 
 export default function Logement() {
-  const [isOpen1, setIsOpen1] = useState(false);
-  const [isOpen2, setIsOpen2] = useState(false);
-
-  const toggleDropdown1 = () => {
-    setIsOpen1(!isOpen1);
-  };
-
-  const toggleDropdown2 = () => {
-    setIsOpen2(!isOpen2);
-  };
-
   const { id } = useParams();
   const [property, setProperty] = useState(null);
 
@@ -47,22 +36,12 @@ export default function Logement() {
             </span>
           ))}
         </div>
-        <Grade grade={property.grade} />
+        <Grade grade={property.rating} />
       </div>
       <div className="logement-container">
         <div className="dropdown-container" style={{ display: "flex" }}>
-          <Dropdown
-            title="Description"
-            content={description}
-            isOpen={isOpen2}
-            toggleDropdown={toggleDropdown2}
-          />
-          <Dropdown
-            title="Équipements"
-            content={equipments}
-            isOpen={isOpen1}
-            toggleDropdown={toggleDropdown1}
-          />
+          <Dropdown title="Description" content={description} />
+          <Dropdown title="Équipements" content={equipments} />
         </div>
       </div>
     </div>
