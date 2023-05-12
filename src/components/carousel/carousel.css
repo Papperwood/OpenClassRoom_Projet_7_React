@@ -1,27 +1,35 @@
-.carousel .slide {
-  border-radius: 10px;
-}
-
-.carousel .thumbs-wrapper {
-  display: none;
-}
-
-.carousel .control-prev.control-arrow:before {
-  background: url('../../assets/Vector_left.png') no-repeat;
-}
-
-.carousel .control-next.control-arrow:before {
-  background: url('../../assets/Vector_right.png') no-repeat;
-}
-
-.carousel-slide-image {
+.carousel-section {
   width: 1240px;
   height: 415px;
-  object-fit: cover;
-  border-radius: 15px;
+  margin: 0 auto;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  position: relative;
 }
 
-.carousel-container {
-  display: flex;
-  justify-content: center;
+.carousel-arrow-right,
+.carousel-arrow-left {
+  width: 47px; 
+  height: 80px; 
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); 
+  cursor: pointer;
+}
+
+.carousel-arrow-right {
+  right: 24px;
+}
+
+.carousel-arrow-left {
+  left: 24px;
+}
+
+.carousel-slide-count {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white; 
 }

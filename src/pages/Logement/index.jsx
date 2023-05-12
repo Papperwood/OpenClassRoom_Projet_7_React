@@ -9,10 +9,16 @@ import Carousel from "../../components/carousel/carousel";
 export default function Logement() {
   const { id } = useParams();
   const [property, setProperty] = useState(null);
+  const [images, setImages] = useState([]);
 
   useEffect(() => {
     const foundProperty = kasaList.find((item) => item.id === id);
     setProperty(foundProperty);
+  }, [id]);
+
+  useEffect(() => {
+    const pictures = kasaList.find(item => item.id === id).pictures;
+    setImages(pictures);
   }, [id]);
 
   if (!property) {
@@ -25,7 +31,7 @@ export default function Logement() {
 
   return (
     <div>
-      <Carousel selectedId={id} />
+      <Carousel images={images} />
       <h1>{property.title}</h1>
       <h3>{property.location}</h3>
       <div className="info-container">
