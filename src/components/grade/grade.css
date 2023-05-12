@@ -1,4 +1,4 @@
-.star-empty {
+.star-full {
   width: 0.9375rem;
   height: 0.9375rem;
   margin-right: 0.3125rem;
@@ -10,6 +10,7 @@
 }
 
 @media (min-width: 992px) {
+  .star-full,
   .star-empty {
     width: 1.875rem;
     height: 1.875rem;
@@ -18,5 +19,5 @@
 }
 
 .star-full {
-  fill: #ff6060;
+  fill: #2cf803;
 }
