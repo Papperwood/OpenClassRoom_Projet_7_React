@@ -17,3 +17,20 @@
   align-items: center;
   justify-content: space-between;
 }
+
+.middle {
+  width: 1240px;
+  margin: auto;
+}
+
+.middle_in {
+  display: flex;
+}
+
+h1 {
+  color: #ff6060;
+}
+
+h3 {
+  color: #ff6060;
+}

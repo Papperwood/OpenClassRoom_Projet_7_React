@@ -6,6 +6,7 @@ import Dropdown from "../../components/dropdown/dropdown"; // Importe le composa
 import kasaList from "../../data/kasaList.json"; // Importe les données de la liste de logements.
 import Grade from "../../components/grade/grade"; // Importe le composant Grade.
 import Carousel from "../../components/carousel/carousel"; // Importe le composant Carousel.
+import Host from "../../components/host/host"; // Importe le composant Host.
 
 // Déclare une fonction appelée Logement qui retourne un composant fonctionnel React.
 export default function Logement() {
@@ -33,6 +34,9 @@ export default function Logement() {
     return <div>Loading...</div>;
   }
 
+  // Si property existe, alors host existe également.
+  const host = property ? property.host : null;
+
   // Déclare les variables pour les détails du logement.
   const equipments = property.equipments ? property.equipments.join(", ") : "";
   const description = property.description || "";
@@ -43,27 +47,33 @@ export default function Logement() {
     <div>
       {/* Affiche le composant Carousel avec les images du logement. */}
       <Carousel images={images} />
-      {/* Affiche le titre du logement. */}
-      <h1>{property.title}</h1>
-      {/* Affiche l'emplacement du logement. */}
-      <h3>{property.location}</h3>
-      <div className="info-container">
-        <div className="tags-container">
-          {/* Mappe sur les tags du logement et les affiche. */}
-          {tags.map((tag, index) => (
-            <span key={index} className="tag">
-              {tag}
-            </span>
-          ))}
+      <div className="middle">
+        <div className="middle_in">
+          {/* Affiche le titre du logement. */}
+          <h1>{property.title}</h1>
+          {/* Affiche les informations de l'hôte */}
+          {host && <Host name={host.name} picture={host.picture} />}
         </div>
-        {/* Affiche le composant Grade avec la note du logement. */}
-        <Grade grade={property.rating} />
-      </div>
-      <div className="logement-container">
-        <div className="dropdown-container" style={{ display: "flex" }}>
-          {/* Affiche deux composants Dropdown pour la description et les équipements du logement. */}
-          <Dropdown title="Description" content={description} />
-          <Dropdown title="Équipements" content={equipments} />
+        {/* Affiche l'emplacement du logement. */}
+        <h3>{property.location}</h3>
+        <div className="info-container">
+          <div className="tags-container">
+            {/* Mappe sur les tags du logement et les affiche. */}
+            {tags.map((tag, index) => (
+              <span key={index} className="tag">
+                {tag}
+              </span>
+            ))}
+          </div>
+          {/* Affiche le composant Grade avec la note du logement. */}
+          <Grade grade={property.rating} />
+        </div>
+        <div className="logement-container">
+          <div className="dropdown-container" style={{ display: "flex" }}>
+            {/* Affiche deux composants Dropdown pour la description et les équipements du logement. */}
+            <Dropdown title="Description" content={description} />
+            <Dropdown title="Équipements" content={equipments} />
+          </div>
         </div>
       </div>
     </div>
