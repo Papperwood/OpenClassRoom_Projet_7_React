@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 400px;
+  height: 300px;
 }
 
 .background-image {
@@ -20,4 +20,23 @@
   color: white;
   text-align: center;
   font-weight: bold;
+}
+
+@media screen and (max-width: 375px) {
+  .home-container {
+    height: auto;
+  }
+
+  .background-image {
+    width: 335px;
+    height: 111px;
+    margin: 0 auto;
+  }
+
+  .overlay-text {
+    font-size: 18px;
+    width: 90%;
+    margin: 0 auto;
+    word-wrap: break-word;
+  }
 }

@@ -7,20 +7,23 @@ import PropertyCard from "../PropertyCard/PropertyCard"; // Importe le composant
 export default function Gallery() {
   // Retourne le JSX.
   return (
-    // Crée un élément "main" avec la classe "gallery".
-    <main className="gallery">
-      {/* Parcourt le tableau kasaList et pour chaque élément, retourne un composant PropertyCard. */}
-      {kasaList.map((kasaList) => {
-        // Pour chaque élément de la liste, un composant PropertyCard est créé avec des propriétés spécifiques.
-        return (
-          <PropertyCard
-            key={kasaList.id} // La clé est utilisée par React pour identifier de manière unique chaque composant dans la liste.
-            id={kasaList.id} // La propriété id est passée au composant.
-            title={kasaList.title} // La propriété title est passée au composant.
-            cover={kasaList.cover} // La propriété cover est passée au composant.
-          />
-        );
-      })}
-    </main>
+    // Crée un div avec la classe 'gallery-wrapper' pour l'application des styles CSS.
+    <div className="gallery-wrapper">
+      {/* Le contenu précédent est maintenant enveloppé dans un autre div avec la classe 'gallery'. */}
+      <main className="gallery">
+        {/* Parcourt le tableau kasaList et pour chaque élément, retourne un composant PropertyCard. */}
+        {kasaList.map((kasaList) => {
+          // Pour chaque élément de la liste, un composant PropertyCard est créé avec des propriétés spécifiques.
+          return (
+            <PropertyCard
+              key={kasaList.id} // La clé est utilisée par React pour identifier de manière unique chaque composant dans la liste.
+              id={kasaList.id} // La propriété id est passée au composant.
+              title={kasaList.title} // La propriété title est passée au composant.
+              cover={kasaList.cover} // La propriété cover est passée au composant.
+            />
+          );
+        })}
+      </main>
+    </div>
   );
 }
