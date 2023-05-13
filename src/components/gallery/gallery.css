@@ -16,16 +16,12 @@
   width: 100%;
 }
 
-@media screen and (max-width: 1230px) {
-  .gallery {
-    gap: 25px;
-    padding: 25px 15px;
-  }
-}
-
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 375px) {
   .gallery-wrapper {
     width: 100%;
     border-radius: 0;
+  }
+  .gallery-wrapper {
+    background-color: #ffffff;
   }
 }

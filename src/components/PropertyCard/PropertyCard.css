@@ -17,9 +17,10 @@
     width: 100%;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 375px) {
   .PropertyCard {
-    height: 200px;
+    height: 255px;
+    width: 355px;
   }
 }
 
