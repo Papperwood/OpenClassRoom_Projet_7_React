@@ -11,6 +11,7 @@
   font-size: clamp(20px, 4vw, 36px);
   text-align: center;
   color: #ff6060;
+  margin-bottom: 100px;
 }
 
 .Error_in_2 {
@@ -20,4 +21,14 @@
   font-size: clamp(12px, 2.5vw, 18px);
   text-decoration: none;
   color: #ff6060;
+}
+@media screen and (max-width: 375px) {
+  .Error_in_1 {
+    width: 195px;
+  }
+
+  img {
+    width: 198px;
+    height: 99px;
+  }
 }
