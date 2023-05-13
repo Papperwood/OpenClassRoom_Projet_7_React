@@ -15,7 +15,6 @@ body {
   border-radius: 15px;
   object-fit: cover;
   margin-left: 100px;
-
 }
 
 @media (max-width: 1440px) {
@@ -28,6 +27,6 @@ body {
   .kalen_img {
     width: 336px;
     height: 223px;
+    margin-left: 20px;
   }
 }
-

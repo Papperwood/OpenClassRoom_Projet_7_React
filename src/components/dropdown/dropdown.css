@@ -52,4 +52,9 @@
     height: 30px;
     font-size: 12px;
   }
+
+  button img {
+    height: 10px;
+    width: 16px;
+  }
 }
