@@ -1,23 +1,8 @@
-.star-full {
-  width: 0.9375rem;
-  height: 0.9375rem;
-  margin-right: 0.3125rem;
-  fill: var(--primary-color);
-}
-
-.star-empty {
-  fill: #e3e3e3;
-}
-
-@media (min-width: 992px) {
-  .star-full,
-  .star-empty {
-    width: 1.875rem;
-    height: 1.875rem;
-    margin-right: 0.625rem;
+@media screen and (max-width: 375px) {
+  .Grade-wrapper img {
+    width: 13px;
+    height: 13px;
   }
 }
 
-.star-full {
-  fill: #2cf803;
-}
+

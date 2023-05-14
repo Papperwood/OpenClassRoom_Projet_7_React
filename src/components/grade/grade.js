@@ -2,6 +2,7 @@
 import React from "react"; // Importe React.
 import starFull from "../../assets/star-full.png"; // Importe l'image pour une étoile pleine.
 import starEmpty from "../../assets/star-empty.png"; // Importe l'image pour une étoile vide.
+import "./grade.css"; // Importe les styles CSS pour le grade.
 
 // Définit une fonction Grade qui prend en entrée un objet de propriétés, avec `grade` comme propriété.
 function Grade({ grade }) {

@@ -34,3 +34,43 @@ h1 {
 h3 {
   color: #ff6060;
 }
+
+@media screen and (max-width: 375px) {
+  .middle {
+    width: 375px;
+    padding: 0px;
+  }
+  .dropdown-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+  .middle {
+    width: 100%;
+    padding: 0px;
+  }
+  .dropdown-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+  .info-container {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  .middle_in {
+    flex-direction: column;
+    align-items: center;
+  }
+  h1 {
+    font-size: 18px;
+  }
+  h3 {
+    font-size: 14px;
+  }
+  .tags-container span {
+    width: 84px;
+    height: 18px;
+    font-size: 10px;
+  }
+}

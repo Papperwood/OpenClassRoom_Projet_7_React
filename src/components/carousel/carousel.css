@@ -10,11 +10,11 @@
 
 .carousel-arrow-right,
 .carousel-arrow-left {
-  width: 47px; 
-  height: 80px; 
+  width: 47px;
+  height: 80px;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%); 
+  transform: translateY(-50%);
   cursor: pointer;
 }
 
@@ -31,5 +31,18 @@
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-  color: white; 
+  color: white;
+}
+
+@media screen and (max-width: 375px) {
+  .carousel-section {
+    width: 335px;
+    height: 255px;
+  }
+
+  .carousel-arrow-right,
+  .carousel-arrow-left {
+    width: 12px;
+    height: 20px;
+  }
 }
