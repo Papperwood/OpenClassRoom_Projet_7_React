@@ -1,4 +1,7 @@
 @media screen and (max-width: 375px) {
+  .Grade-wrapper {
+    width: 80px;
+  }
   .Grade-wrapper img {
     width: 13px;
     height: 13px;

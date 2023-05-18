@@ -1,4 +1,3 @@
-/* Style commun pour tous les écrans */
 .dropdown {
   width: 100%;
   max-width: 1023px;
@@ -36,7 +35,6 @@
   box-sizing: border-box;
 }
 
-/* Responsive design */
 @media screen and (max-width: 1440px) {
   .dropdown-title {
     font-size: 14px;
@@ -45,7 +43,7 @@
 
 @media screen and (max-width: 375px) {
   .dropdown {
-    max-width: 335px;
+    width: 335px;
   }
   
   .dropdown-title {

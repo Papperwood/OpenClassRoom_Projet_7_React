@@ -17,6 +17,9 @@
     width: 32px;
     height: 32px;
   }
+  .host-container {
+    font-size: 12px;
+  }
 }
 .host-name {
   color: #ff6060;

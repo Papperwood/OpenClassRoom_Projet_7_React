@@ -1,4 +1,27 @@
+.middle {
+  width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.middle_in {
+  width: 1240px;
+}
+.middle_in_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: #ff6060;
+  margin: 0 auto;
+}
+.middle_content_grade_host {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 60px;
+}
+
 .dropdown-container {
+  display: flex;
   gap: 76px;
 }
 
@@ -7,70 +30,47 @@
   background-color: #ff6060;
   color: white;
   padding: 0.5rem;
-  border-radius: 15px;
+  border-radius: 10px;
   margin-right: 0.5rem;
   margin-bottom: 0.5rem;
 }
 
-.info-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 
-.middle {
-  width: 1240px;
-  margin: auto;
-}
-
-.middle_in {
-  display: flex;
-}
-
-h1 {
-  color: #ff6060;
-}
-
-h3 {
-  color: #ff6060;
+@media screen and (max-width: 650px) {
+  .middle_in_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+  }
 }
 
 @media screen and (max-width: 375px) {
-  .middle {
-    width: 375px;
-    padding: 0px;
+  .middle_content_grade_host {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 80px;
   }
   .dropdown-container {
-    display: flex;
-    flex-direction: column;
-    gap: 0px;
-  }
-  .middle {
-    width: 100%;
-    padding: 0px;
-  }
-  .dropdown-container {
-    display: flex;
-    flex-direction: column;
-    gap: 0px;
-  }
-  .info-container {
-    flex-direction: column-reverse;
-    align-items: flex-start;
+    display: block;
   }
   .middle_in {
-    flex-direction: column;
-    align-items: center;
+    width: 335px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
-  h1 {
-    font-size: 18px;
-  }
-  h3 {
-    font-size: 14px;
-  }
-  .tags-container span {
-    width: 84px;
-    height: 18px;
+  .tag span {
     font-size: 10px;
+  }
+  .logement-container {
+    width: 335px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .middle {
+    width: 375px;
   }
 }

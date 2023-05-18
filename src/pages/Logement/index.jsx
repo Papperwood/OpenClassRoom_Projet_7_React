@@ -37,27 +37,32 @@ export default function Logement() {
     <div>
       <Carousel images={property.pictures} />
       <div className="middle">
-        <div className="middle_in">
-          {host && <Host name={host.name} picture={host.picture} />}
-        </div>
-        <h3>{property.location}</h3>
-        <div className="info-container">
-          <div className="tags-container">
-            {tags.map((tag, index) => (
-              <span key={index} className="tag">
-                {tag}
-              </span>
-            ))}
+          <main className="middle_in">
+            <div className="middle_in_content">
+              <div>
+                <h1>{property.title}</h1>
+                <h2>{property.location}</h2>
+                <div>
+                  {tags.map((tag, index) => (
+                    <span key={index} className="tag">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <div className="middle_content_grade_host">
+                <Grade grade={property.rating} />
+                {host && <Host name={host.name} picture={host.picture} />}
+              </div>
+            </div>
+          </main>
+          <div className="logement-container">
+            <div className="dropdown-container">
+              {/* Affiche deux composants Dropdown pour la description et les équipements du logement. */}
+              <Dropdown title="Description" content={description} />
+              <Dropdown title="Équipements" content={equipments} />
+            </div>
           </div>
-          <Grade grade={property.rating} />
-        </div>
-        <div className="logement-container">
-          <div className="dropdown-container" style={{ display: "flex" }}>
-            {/* Affiche deux composants Dropdown pour la description et les équipements du logement. */}
-            <Dropdown title="Description" content={description} />
-            <Dropdown title="Équipements" content={equipments} />
-          </div>
-        </div>
       </div>
     </div>
   );
