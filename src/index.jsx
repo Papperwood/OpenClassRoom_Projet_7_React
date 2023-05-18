@@ -1,14 +1,14 @@
-// Importer les modules nécessaires
-import React from "react"; // Importe React
-import "./pages/css/normalize.css"; // Importe normalize.css pour réinitialiser les styles CSS par défaut du navigateur
-import ReactDOM from "react-dom/client"; // Importe ReactDOM pour manipuler le DOM
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; // Importe BrowserRouter, Route, et Routes de react-router-dom pour gérer les routes de l'application
-import Home from "./pages/Home"; // Importe le composant Home
-import Header from "./components/header/header"; // Importe le composant Header
-import Footer from "./components/footer/footer"; // Importe le composant Footer
-import Apropos from "./pages/Apropos"; // Importe le composant Apropos
-import Error from "./pages/Error"; // Importe le composant Error
-import Logement from "./pages/Logement"; // Importe le composant Logement
+
+import React from "react"; 
+import "./pages/css/normalize.css"; 
+import ReactDOM from "react-dom/client"; 
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; 
+import Home from "./pages/Home"; 
+import Header from "./components/header/header"; 
+import Footer from "./components/footer/footer"; 
+import Apropos from "./pages/Apropos"; 
+import Error from "./pages/Error"; 
+import Logement from "./pages/Logement"; 
 
 // Crée une racine pour l'application React
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -19,20 +19,17 @@ root.render(
     <Router>
       {" "}
       {/* Encapsule l'application dans un Router pour gérer les routes */}
-      <Header /> {/* Affiche le composant Header */}
+      <Header /> 
       <Routes>
         {" "}
-        {/* Démarre la définition des routes */}
         <Route path="/" exact element={<Home />} />{" "}
-        {/* Défini la route pour la page d'accueil */}
         <Route path="/Apropos" element={<Apropos />} />{" "}
-        {/* Défini la route pour la page A propos */}
         <Route path="/Logement/:id" element={<Logement />} />{" "}
-        {/* Défini la route pour la page Logement avec un paramètre id */}
+
         <Route path="*" element={<Error />} />{" "}
-        {/* Défini une route par défaut qui s'active si aucune des autres routes ne correspond */}
+
       </Routes>
-      <Footer /> {/* Affiche le composant Footer */}
+      <Footer /> 
     </Router>
   </React.StrictMode>
 );

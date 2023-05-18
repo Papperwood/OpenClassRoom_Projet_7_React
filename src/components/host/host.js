@@ -1,6 +1,5 @@
-// Host.js
 import React from "react";
-import "./host.css"; // Importe le CSS pour le composant Host.
+import "./host.css";
 
 function Host({ name, picture }) {
   return (
