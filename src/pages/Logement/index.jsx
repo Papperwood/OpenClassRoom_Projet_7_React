@@ -1,12 +1,11 @@
-
 import "../css/logement.css";
-import React, { useState, useEffect } from "react"; 
-import { useParams } from "react-router-dom"; 
-import Dropdown from "../../components/dropdown/dropdown"; 
-import kasaList from "../../data/kasaList.json"; 
-import Grade from "../../components/grade/grade"; 
-import Carousel from "../../components/carousel/carousel"; 
-import Host from "../../components/host/host"; 
+import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+import Dropdown from "../../components/dropdown/dropdown";
+import kasaList from "../../data/kasaList.json";
+import Grade from "../../components/grade/grade";
+import Carousel from "../../components/carousel/carousel";
+import Host from "../../components/host/host";
 
 // Déclare une fonction appelée Logement qui retourne un composant fonctionnel React.
 export default function Logement() {
@@ -21,9 +20,9 @@ export default function Logement() {
     setProperty(foundProperty);
   }, [id]);
 
-  // Si la propriété n'est pas encore chargée, retourne un div avec le texte 'Loading...'.
+  // Si la propriété n'est pas encore chargée, retourne la page error car null.
   if (!property) {
-    return <div>Loading...</div>;
+    return null;
   }
 
   // Si property existe, alors host existe également.
@@ -34,20 +33,16 @@ export default function Logement() {
   const description = property.description || "";
   const tags = property.tags || [];
 
-
   return (
     <div>
-
       <Carousel images={property.pictures} />
       <div className="middle">
         <div className="middle_in">
-
           {host && <Host name={host.name} picture={host.picture} />}
         </div>
         <h3>{property.location}</h3>
         <div className="info-container">
           <div className="tags-container">
-
             {tags.map((tag, index) => (
               <span key={index} className="tag">
                 {tag}
